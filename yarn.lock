@@ -3415,6 +3415,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@openzeppelin/contracts@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@openzeppelin/contracts@npm:5.3.0"
+  checksum: 1d1629c42d170e070c112779c33b3b81c133995695271bc62a696160b598b56455a3c56d1f976a42ee3dd426c4ad984451b1752139f2b7897c9e1ba56c1947da
+  languageName: node
+  linkType: hard
+
 "@paulmillr/qr@npm:^0.2.1":
   version: 0.2.1
   resolution: "@paulmillr/qr@npm:0.2.1"
@@ -3443,6 +3450,13 @@ __metadata:
   version: 0.2.0
   resolution: "@pkgr/core@npm:0.2.0"
   checksum: b7e126161ecf59ceaa0a95ba4b937cc57bf29c42bd72dc129391e4c9ab06aac31e37379dde4f523a736aab9765b18c2494096eedcbe1f494df415998eef2b949
+  languageName: node
+  linkType: hard
+
+"@popperjs/core@npm:^2.11.8, @popperjs/core@npm:^2.9.2":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
   languageName: node
   linkType: hard
 
@@ -5033,6 +5047,15 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 8d9fdb43836646c2ecd445041de03e057f9b459885be57faee64104160487a63730b9f371e8ad7d33f360b3cc6dc0e323543962fc5fa296b92b322b946732be0
+  languageName: node
+  linkType: hard
+
+"@types/bootstrap@npm:^5":
+  version: 5.2.10
+  resolution: "@types/bootstrap@npm:5.2.10"
+  dependencies:
+    "@popperjs/core": ^2.9.2
+  checksum: d1253a2f19c96d667e280c07eb29cca00529f31fc3b799d5feef928476735994411a1a2643e3f1581855250d031f120e628396b79bade491ea956a99192eaeea
   languageName: node
   linkType: hard
 
@@ -7062,6 +7085,15 @@ __metadata:
   version: 5.2.1
   resolution: "bn.js@npm:5.2.1"
   checksum: 3dd8c8d38055fedfa95c1d5fc3c99f8dd547b36287b37768db0abab3c239711f88ff58d18d155dd8ad902b0b0cee973747b7ae20ea12a09473272b0201c9edd3
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:^5.3.6":
+  version: 5.3.6
+  resolution: "bootstrap@npm:5.3.6"
+  peerDependencies:
+    "@popperjs/core": ^2.11.8
+  checksum: ffd7c31590e90290a1242fdd86522ad4c5a8aa7aaf76b664d4b66d782a005b60eddf80c0d9c465168734124eed7d0c74c48ee505582fec08b3d7d6d2cc9c2918
   languageName: node
   linkType: hard
 
@@ -16155,6 +16187,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
+    "@openzeppelin/contracts": ^5.3.0
+    "@popperjs/core": ^2.11.8
+    "@types/bootstrap": ^5
+    bootstrap: ^5.3.6
     husky: ^9.1.6
     lint-staged: ^15.2.10
   languageName: unknown

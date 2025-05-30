@@ -29,6 +29,7 @@ const scaffoldConfig = {
   // The key is the chain ID, and the value is the HTTP RPC URL
   rpcOverrides: {
     // Example:
+    [chains.hardhat.id]: "http://localhost:8545",
     // [chains.mainnet.id]: "https://mainnet.buidlguidl.com",
   },
 
