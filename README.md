@@ -1,21 +1,16 @@
-# 🏗 Scaffold-ETH 2
+# 📝 Смарт-контракт для протекции сделки с криптовалютой (ETH или IERC20 токены) третьей стороной.
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+Логика работы:
+1. Покупатель создаёт сделку через createDeal() или createDealEth(), указывая продавца, арбитра, сумму и срок сделки;
+2. Криптовалюта поступает на смарт-контракт, где также создаётся сделка, ожидающая подтверждения обеих сторон;
+3. Покупатель и Продавец могут подтвердить сделку через approveDeal(), указав id сделки;
+4. Если сделка подтверждена с обеих сторон, продавец может вывести криптовалюту через withdrawFunds();
+5. Если возник конфликт, арбитр может закончить сделку через resolveDispute() в пользу любого участника с переводом криптовалюты на его счёт;
+6. Если срок сделки истёк, но подтверждение от обеих сторон не поступило, только арбитр может её завершить.
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+[![2025-05-30-151703.png](https://i.postimg.cc/mkdbTwXb/2025-05-30-151703.png)](https://postimg.cc/sGhFcpC8)
 
-⚙️ Built using NextJS, RainbowKit, Foundry/Hardhat, Wagmi, Viem, and Typescript.
-
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+Итоговый проект по курсу "Технологии распределенного реестра", УрФУ, весенний семестр 2024-2025 гг.
 
 ## Requirements
 
